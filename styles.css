@@ -1,141 +1,109 @@
-
-* {
+body {
+    font-family: 'Roboto', sans-serif; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    background-color: #a91010;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    background-image: url('icecream1.jpeg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    color: #333; 
 }
 
 header {
-    background-color: burlywood;
-    color: #fafafa;
+    background-color: rgba(248, 180, 0, 0.8); 
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    padding: 10px 0;
-}
-
-header h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 3.5rem;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2rem;
-    color: rgb(81, 76, 76);
 }
 
 main {
-    background-color:  whitesmoke;
-    padding: 20px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    text-align: center; 
 }
 
-section {
-    margin-bottom: 30px;
-}
-
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.2rem;
-    color: whitesmoke;
-    text-align: center;
+.facts-section, .nutrition-section, .imagery-section {
     margin-bottom: 20px;
 }
 
-
-.lyrics-section {
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 8px;
+.single-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
 }
 
-.section1 p {
-    font-family: "Roboto", sans-serif; 
-    font-weight: 700; 
-    font-style: normal; 
-    color: #e80e20; 
-    font-size: 22px; 
-    background-color: transparent; 
+.nutrition-section ul {
+    display: inline-block;
+    text-align: left;
+    padding: 0;
 }
 
-
-.section2 p {
-    font-family: "Times New Roman", serif; 
-    font-weight: 400; 
-    font-style: italic; 
-    color: #0f1db2; 
-    font-size: 25px; 
-    background-color: transparent; 
+.nutrition-section ul li {
+    list-style: none;
 }
 
-
-.section3 p {
-    font-family: "Arial", sans-serif; 
-    font-weight: 300; 
-    font-style: normal; 
-    color: #dcef0c;
-    font-size: 19px; 
-    background-color: transparent; 
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-
-.section4 p {
-    font-family: "Georgia", serif; 
-    font-weight: 400; 
-    font-style: oblique; 
-    color: #e408aa; 
-    font-size: 20px; 
-    background-color: transparent; 
+.image-container img {
+    width: 300px; 
+    height: auto; 
+    margin: 10px;
 }
-
-
-.section1 p {
-    color: #e74c3c;
-}
-
-.section2 p {
-    color: #2e07f0; 
-}
-
-.section3 p {
-    color: #d3ed0a; 
-}
-
-.section4 p {
-    color: #f312b3;
-}
-
-
 
 footer {
-    background-color: burlywood;
-    color: whitesmoke;
+    background-color: rgba(51, 51, 51, 0.8); 
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    padding: 10px 0;
 }
 
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-p {
-    font-size: 1.1rem;
-    line-height: 1.8;
+.footer-content img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.footer-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content label {
+    margin: 5px 0;
+}
+
+.footer-content input, .footer-content textarea {
+    padding: 10px;
     margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
 }
 
+.footer-content button {
+    padding: 10px 20px;
+    background-color: #f8b400;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
 
-
-
+.footer-content button:hover {
+    background-color: #d49400; 
+}
